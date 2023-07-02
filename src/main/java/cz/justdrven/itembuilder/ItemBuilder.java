@@ -2,16 +2,14 @@ package cz.justdrven.itembuilder;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ItemBuilder extends JavaPlugin {
+public class ItemBuilder {
+    private static JavaPlugin plugin;
 
-    @Override
-    public void onEnable() {
-        // Plugin startup logic
-
+    public static JavaPlugin getPlugin() {
+        return plugin;
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+    public static void setup(JavaPlugin plugin) {
+        ItemBuilder.plugin = plugin;
     }
 }

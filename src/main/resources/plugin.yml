@@ -1,3 +1,0 @@
-name: ItemBuilder
-version: '${version}'
-main: cz.justdrven.itembuilder.ItemBuilder
